@@ -31,13 +31,13 @@ conda env create -f environment.yaml
 ## Data preparation
 
 
-1.Download the original videos (https://pan.baidu.com/s/1Mm8-k9zLOdM2Wm0PNygPlA password: rh4s) 
+1.Download the original videos (link: https://pan.baidu.com/s/1DIe-MU_Zww7IpVQjgBB3Lw pw: nfge) 
 
-2.Extract i3d visual features for LAD2000, you can clone this project (link: https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
+2.Extract i3d visual features for LAD2000, you can clone this project (https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
 
 or you can directly use the i3d features of our LAD2000
 
-1.Download the i3d features(https://pan.baidu.com/s/1Mm8-k9zLOdM2Wm0PNygPlA password: rh4s) and unpress the i3d.zip.
+1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ) and unzip the i3d.zip.
 
 2.change the "dataset_path" to "you/path/i3d"
 

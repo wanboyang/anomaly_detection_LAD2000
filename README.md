@@ -41,7 +41,7 @@ or you can directly use the i3d features of our LAD2000
 
 2.change the "dataset_path" to "you/path/i3d"
 
-
+For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://pan.baidu.com/s/1J4EDHnpax1XW7tVULWiX2w pw:j5r5)
 
 ## Class_index
 ```

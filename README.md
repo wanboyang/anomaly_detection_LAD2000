@@ -43,7 +43,7 @@ or you can directly use the i3d features of our LAD2000
 
 For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://pan.baidu.com/s/1J4EDHnpax1XW7tVULWiX2w pw:j5r5)
 
-For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (coming soon......)
+For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2)
 
 ## Class_index
 ```

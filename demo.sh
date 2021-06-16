@@ -1,0 +1,1 @@
+python demo.py --pretrained_ckpt /home/tu-wan/windows4t/project/anomaly_wan/anomaly_detection_IET/ckpt/AED_T/i3d/LAD2000/k_4/_Lambda_1_10/combine/20210323170742/iter_6000.pkl --device 0 --model_name AED_T --feature_pretrain_model i3d --feature_modal combine --max_seqlen 5 --feature_size 2048 --Lambda 1_10

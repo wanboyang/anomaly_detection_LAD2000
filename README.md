@@ -56,7 +56,7 @@ class_dict = {'Drop': 3, 'Loitering': 9, 'Crash': 0, 'Violence': 13, 'FallIntoWa
 For LAD2000 database:
 
 ```
-LAD2000T_i3d.sh
+sh LAD2000T_i3d.sh
 ```
 
 For ped2 database:

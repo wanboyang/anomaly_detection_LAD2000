@@ -43,6 +43,8 @@ or you can directly use the i3d features of our LAD2000
 
 For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://pan.baidu.com/s/1J4EDHnpax1XW7tVULWiX2w pw:j5r5)
 
+For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (coming soon......)
+
 ## Class_index
 ```
 class_dict = {'Drop': 3, 'Loitering': 9, 'Crash': 0, 'Violence': 13, 'FallIntoWater': 4, 'Fire': 7, 'Fighting': 6, 'Crowd': 1, 'Destroy': 2, 'Falling': 5, 'Trampled': 12, 'Thiefing': 11, 'Panic': 10, 'Hurt': 8}

@@ -1,5 +1,5 @@
 # Introduction
-This repository is established for Anomaly detection in video sequences: A benchmark and computational model. In this repository, we provide a video anomaly detection database named LAD2000, which contains 2000 videos and 14 anomaly categories. The original paper can be found [here]().
+This repository is established for Anomaly detection in video sequences: A benchmark and computational model. In this repository, we provide a video anomaly detection database named LAD2000, which contains 2000 videos and 14 anomaly categories. The original paper can be found [here](https://arxiv.org/abs/2106.08570).
 
 If this work have some benefits to your research, please cite with the following BibTeX:
 

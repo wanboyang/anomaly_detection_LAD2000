@@ -31,19 +31,21 @@ conda env create -f environment.yaml
 ## Data preparation
 
 
-1.Download the original videos (link: https://pan.baidu.com/s/1DIe-MU_Zww7IpVQjgBB3Lw pw: nfge) 
+1.Download the original videos from (link: https://pan.baidu.com/s/1DIe-MU_Zww7IpVQjgBB3Lw pw: nfge)  or (link: https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EqgRSGKhWJFNuKwak8CmC3QBC_Vp34KJ7vF48Fz7D_P3yA?e=K5YYOb pw：123456)
 
 2.Extract i3d visual features for LAD2000, you can clone this project (https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
 
 or you can directly use the i3d features of our LAD2000
 
-1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ) and unzip the i3d.zip.
+1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ) or （link:https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/ElFomOTAEi1NsH_Oa63VYbQB0xrPMQIdNUaXLX3U-BHPkg?e=sViE5H pw:123456） and unzip the i3d.zip.
 
 2.change the "dataset_path" to "you/path/i3d"
 
-For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://pan.baidu.com/s/1J4EDHnpax1XW7tVULWiX2w pw:j5r5)
+For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://pan.baidu.com/s/1J4EDHnpax1XW7tVULWiX2w pw:j5r5) or (link:https://stujxufeeducn-my.sharepoint.com/:u:/g/personal/2201810057_stu_jxufe_edu_cn/EQBo6YEqwLpMq0BwhIIu4KUBjZ5Cof2s96h_ebJQTCrcDA?e=ZEQ0hh pw:123456 
+link:https://stujxufeeducn-my.sharepoint.com/:u:/g/personal/2201810057_stu_jxufe_edu_cn/EY22ebuTjM5LvmTIUlLjg2UBZCyskwMeNaCIu5zQjrNqHQ?e=PmYs8v pw:123456)
 
-For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2)
+For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2) or
+(link:https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EuQvbLCDoIxLgmcgpJRqcbIBzJSc7D6V-q151gLsWyFTrQ?e=JNbUEc pw:123456)
 
 ## Class_index
 ```

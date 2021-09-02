@@ -31,9 +31,10 @@ conda env create -f environment.yaml
 ## Data preparation
 
 
-1.Download the original videos from (link: https://pan.baidu.com/s/1DIe-MU_Zww7IpVQjgBB3Lw pw: nfge)  or (link: https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EqgRSGKhWJFNuKwak8CmC3QBC_Vp34KJ7vF48Fz7D_P3yA?e=K5YYOb pw：123456)
+1.Downloading the original videos from (https://pan.baidu.com/s/1lQTqzqdA0dpi6Gl3ws9h5w pw:b1j8)  or (link: https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EqgRSGKhWJFNuKwak8CmC3QBC_Vp34KJ7vF48Fz7D_P3yA?e=K5YYOb pw：123456)
 
-PS: Using the download link from BaiduDrive may encounter problems with some videos not being able to be downloaded. Therefore, we provide zip files containing all videos. (link: https://pan.baidu.com/s/1lQTqzqdA0dpi6Gl3ws9h5w pw:b1j8)
+ps: The RGB and Flow frames of the original videos are provided in (https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/ErldMjSlsX1ElAlTgJbv8EsBiUCdwlz9O1xgqq07ktumfg?e=ksc1fv pw:123456)
+
 
 2.Extract i3d visual features for LAD2000, you can clone this project (https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
 

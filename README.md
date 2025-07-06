@@ -31,24 +31,23 @@ conda env create -f environment.yaml
 ## Data preparation
 
 
-1.Downloading the original videos from (https://pan.baidu.com/s/1lQTqzqdA0dpi6Gl3ws9h5w pw:b1j8)  or (link: https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EqgRSGKhWJFNuKwak8CmC3QBC_Vp34KJ7vF48Fz7D_P3yA?e=K5YYOb pw：123456)
+1.Downloading the original videos from (https://pan.baidu.com/s/1lQTqzqdA0dpi6Gl3ws9h5w pw:b1j8).
 
-ps: The RGB and Flow frames of the original videos are provided in (https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/ErldMjSlsX1ElAlTgJbv8EsBiUCdwlz9O1xgqq07ktumfg?e=ksc1fv pw:123456)
+ps: The RGB and Flow frames of the original videos are provided in (*****)
 
 
 2.Extract i3d visual features for LAD2000, you can clone this project (https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
 
 or you can directly use the i3d features of our LAD2000
 
-1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ) or （link:https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/ElFomOTAEi1NsH_Oa63VYbQB0xrPMQIdNUaXLX3U-BHPkg?e=sViE5H pw:123456） and unzip the i3d.zip.
+1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ).
 
 2.change the "dataset_path" to "you/path/i3d"
 
-For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (link:https://stujxufeeducn-my.sharepoint.com/:u:/g/personal/2201810057_stu_jxufe_edu_cn/EQBo6YEqwLpMq0BwhIIu4KUBjZ5Cof2s96h_ebJQTCrcDA?e=fhtbs8 pw:123456 
-link:https://stujxufeeducn-my.sharepoint.com/:u:/g/personal/2201810057_stu_jxufe_edu_cn/EY22ebuTjM5LvmTIUlLjg2UBZCyskwMeNaCIu5zQjrNqHQ?e=PmYs8v pw:123456)
+For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (****
+link:**)
 
-For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2) or
-(link:https://stujxufeeducn-my.sharepoint.com/:f:/g/personal/2201810057_stu_jxufe_edu_cn/EuQvbLCDoIxLgmcgpJRqcbIBzJSc7D6V-q151gLsWyFTrQ?e=JNbUEc pw:123456)
+For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2).
 
 ## Class_index
 ```

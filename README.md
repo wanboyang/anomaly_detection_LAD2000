@@ -31,23 +31,22 @@ conda env create -f environment.yaml
 ## Data preparation
 
 
-1.Downloading the original videos from (https://pan.baidu.com/s/1lQTqzqdA0dpi6Gl3ws9h5w pw:b1j8).
+1.Downloading the original videos from "videos_compressed" dir in (https://pan.baidu.com/s/1LmNAWnR-RPqo-azCgASvfg password: avt8).
 
-ps: The RGB and Flow frames of the original videos are provided in (*****)
+ps: The RGB and Flow frames of the original videos are provided in the "denseflow" dir of (https://pan.baidu.com/s/1LmNAWnR-RPqo-azCgASvfg password: avt8).
 
 
 2.Extract i3d visual features for LAD2000, you can clone this project (https://github.com/wanboyang/anomly_feature.pytorch) and just set --dataset to LAD2000.
 
 or you can directly use the i3d features of our LAD2000
 
-1.Download the i3d features(link: https://pan.baidu.com/s/1rzEfdY3PBND-5O1ScxTTUQ pw: jkjz ).
+1.Download the i3d features in the "features" dir of (https://pan.baidu.com/s/1LmNAWnR-RPqo-azCgASvfg password: avt8).
 
 2.change the "dataset_path" to "you/path/i3d"
 
-For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth in (****
-link:**)
+For LAD2000, Auenve, ped2, shanghaitech and UCF_Crime, we provide the full-supervised data splits and groundtruth by data_splits.zip and GTs.zip in (https://pan.baidu.com/s/1LmNAWnR-RPqo-azCgASvfg password: avt8).
 
-For Auenve, ped2, shanghaitech and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2).
+For Auenve, ped2, shanghaitech, and UCF_Crime, we provide the i3d features in (link: https://pan.baidu.com/s/1fYAlFoTdcg8BgRdqoLQ2Bg pw: njy2).
 
 ## Class_index
 ```

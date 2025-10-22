@@ -52,6 +52,88 @@ Our proposed **AED (Anomaly Event Detection)** framework consists of:
 - **AED**: Single-layer ConvLSTM
 - **AED_T**: Two-layer ConvLSTM with enhanced temporal modeling
 
+## 📁 Project Structure
+
+```
+anomaly_detection_LAD2000/
+├── model.py                    # ConvLSTM model architecture and classification/regression heads
+├── options.py                  # Command line argument parser
+├── main.py                     # Main entry point and training environment setup
+├── train.py                    # Main training loop and loss computation
+├── test.py                     # Model testing and prediction functions
+├── losses.py                   # Custom loss functions collection
+├── utils.py                    # Data processing and visualization utilities
+├── eval.py                     # Model performance evaluation and metrics calculation
+├── confusion_m.py              # Confusion matrix visualization
+├── demo.py                     # Demo script for model inference
+├── video_dataset_anomaly_balance_uni_sample.py  # Dataset loading and processing class
+├── utils/                      # Utility scripts
+│   ├── train_test_dict_creater.py    # Data dictionary creation tools
+│   ├── gt_creater.py                 # Ground truth label creator
+│   ├── gt_creater_shanghaitech.py    # ShanghaiTech dataset ground truth
+│   ├── gt_creater_UCF_Crime.py       # UCF-Crime dataset ground truth
+│   ├── Avenue_data_prec.py           # Avenue dataset preprocessing
+│   ├── LV_data_prec.py               # LV dataset preprocessing
+│   └── ped2_data_prec.py             # Ped2 dataset preprocessing
+├── *.sh                        # Training scripts for different datasets
+├── environment.yaml            # Conda environment configuration
+└── README.md                   # Project documentation
+```
+
+## 🔧 Code Components
+
+### Core Modules
+
+#### Model Architecture (`model.py`)
+- **ConvLSTM-based encoder** for spatio-temporal feature extraction
+- **Classification head** for anomaly category prediction
+- **Regression head** for temporal anomaly localization
+- **Multi-task learning** framework
+
+#### Training Pipeline (`train.py`)
+- **Multi-instance learning** with KMXMILL loss
+- **Balanced sampling** between normal and abnormal videos
+- **Gradient accumulation** for stable training
+- **Learning rate scheduling** with cosine annealing
+
+#### Data Processing (`video_dataset_anomaly_balance_uni_sample.py`)
+- **Frame-level feature extraction** from pre-computed I3D features
+- **Temporal sequence processing** with random sampling and padding
+- **Balanced batch construction** with normal and abnormal samples
+- **Multi-dataset support** (LAD2000, Avenue, Ped2, ShanghaiTech, UCF-Crime)
+
+#### Loss Functions (`losses.py`)
+- **KMXMILL Loss**: Multiple instance learning for weakly supervised scenarios
+- **Temporal Consistency Loss**: Ensures smooth temporal predictions
+- **Classification Loss**: Cross-entropy for anomaly category prediction
+- **Regression Loss**: Smooth L1 loss for temporal localization
+
+#### Evaluation Framework (`eval.py`, `confusion_m.py`)
+- **Frame-level AUC**: Area under ROC curve for temporal localization
+- **Video-level Accuracy**: Classification accuracy for anomaly types
+- **False Alarm Rate**: False positive rate analysis
+- **Confusion Matrix**: Multi-class classification visualization
+
+### Key Features
+
+#### Multi-Modal Support
+- **RGB features**: Appearance-based anomaly detection
+- **Flow features**: Motion-based anomaly detection
+- **Combined features**: Fusion of appearance and motion cues
+
+#### Dataset Compatibility
+- **LAD2000**: Large-scale benchmark with 14 anomaly categories
+- **Avenue**: Classical anomaly detection dataset
+- **UCSD Ped2**: Pedestrian anomaly detection
+- **ShanghaiTech**: Complex campus scenes
+- **UCF-Crime**: Real-world surveillance videos
+
+#### Advanced Training Techniques
+- **Weakly Supervised Learning**: Video-level labels for frame-level prediction
+- **Temporal Modeling**: ConvLSTM for sequence understanding
+- **Multi-scale Processing**: Handling variable-length video sequences
+- **Data Augmentation**: Random temporal sampling and perturbation
+
 ## 🚀 Quick Start
 
 ### Installation

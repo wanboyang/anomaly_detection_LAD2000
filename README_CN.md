@@ -52,6 +52,88 @@
 - **AED**: 单层 ConvLSTM
 - **AED_T**: 双层 ConvLSTM，增强时间建模能力
 
+## 📁 项目结构
+
+```
+anomaly_detection_LAD2000/
+├── model.py                    # ConvLSTM模型架构和分类/回归头
+├── options.py                  # 命令行参数解析器
+├── main.py                     # 项目主入口和训练环境设置
+├── train.py                    # 主要训练循环和损失计算
+├── test.py                     # 模型测试和预测函数
+├── losses.py                   # 自定义损失函数集合
+├── utils.py                    # 数据处理和可视化工具函数
+├── eval.py                     # 模型性能评估和指标计算
+├── confusion_m.py              # 混淆矩阵可视化
+├── demo.py                     # 模型推理演示脚本
+├── video_dataset_anomaly_balance_uni_sample.py  # 数据集加载和处理类
+├── utils/                      # 工具脚本
+│   ├── train_test_dict_creater.py    # 数据字典创建工具
+│   ├── gt_creater.py                 # 真实标签创建器
+│   ├── gt_creater_shanghaitech.py    # ShanghaiTech数据集真实标签
+│   ├── gt_creater_UCF_Crime.py       # UCF-Crime数据集真实标签
+│   ├── Avenue_data_prec.py           # Avenue数据集预处理
+│   ├── LV_data_prec.py               # LV数据集预处理
+│   └── ped2_data_prec.py             # Ped2数据集预处理
+├── *.sh                        # 不同数据集的训练脚本
+├── environment.yaml            # Conda环境配置
+└── README.md                   # 项目文档
+```
+
+## 🔧 代码组件
+
+### 核心模块
+
+#### 模型架构 (`model.py`)
+- **基于ConvLSTM的编码器** 用于时空特征提取
+- **分类头** 用于异常类别预测
+- **回归头** 用于时间异常定位
+- **多任务学习** 框架
+
+#### 训练流程 (`train.py`)
+- **多示例学习** 使用KMXMILL损失
+- **平衡采样** 在正常和异常视频之间
+- **梯度累积** 用于稳定训练
+- **学习率调度** 使用余弦退火
+
+#### 数据处理 (`video_dataset_anomaly_balance_uni_sample.py`)
+- **帧级特征提取** 从预计算的I3D特征
+- **时间序列处理** 使用随机采样和填充
+- **平衡批次构建** 包含正常和异常样本
+- **多数据集支持** (LAD2000, Avenue, Ped2, ShanghaiTech, UCF-Crime)
+
+#### 损失函数 (`losses.py`)
+- **KMXMILL损失**: 弱监督场景的多示例学习
+- **时间一致性损失**: 确保平滑的时间预测
+- **分类损失**: 异常类别预测的交叉熵
+- **回归损失**: 时间定位的平滑L1损失
+
+#### 评估框架 (`eval.py`, `confusion_m.py`)
+- **帧级AUC**: 时间定位的ROC曲线下面积
+- **视频级准确率**: 异常类型的分类准确率
+- **误报率**: 假阳性率分析
+- **混淆矩阵**: 多类分类可视化
+
+### 主要特性
+
+#### 多模态支持
+- **RGB特征**: 基于外观的异常检测
+- **Flow特征**: 基于运动的异常检测
+- **组合特征**: 外观和运动线索的融合
+
+#### 数据集兼容性
+- **LAD2000**: 包含14种异常类别的大规模基准
+- **Avenue**: 经典异常检测数据集
+- **UCSD Ped2**: 行人异常检测
+- **ShanghaiTech**: 复杂校园场景
+- **UCF-Crime**: 真实世界监控视频
+
+#### 高级训练技术
+- **弱监督学习**: 使用视频级标签进行帧级预测
+- **时间建模**: ConvLSTM用于序列理解
+- **多尺度处理**: 处理可变长度视频序列
+- **数据增强**: 随机时间采样和扰动
+
 ## 🚀 快速开始
 
 ### 安装
